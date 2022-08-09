@@ -1,0 +1,157 @@
+body {
+    background: hsl(0, 100%, 74%) url(bg-intro-desktop.png);
+
+
+
+
+
+
+
+
+}
+
+main {
+    width: 50%;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    display: flex;
+    gap: 30px;
+    font-family: 'poppins', sans-serif;
+    font-weight: 400;
+
+}
+
+
+
+.otherside {
+    display: grid;
+    grid-template-areas:
+        'a'
+        'b'
+    ;
+    gap: 10px;
+
+    box-shadow: 0 10px 10px -5px;
+}
+
+.seconddiv {
+    grid-area: a;
+}
+
+.thirddiv {
+    grid-area: b;
+    background: white;
+    padding: 40px;
+    width: 300px;
+    margin-top: 90px;
+    margin-left: 180px;
+    margin: 0 auto;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+h1 {
+    color: white;
+
+}
+
+p {
+    color: white;
+}
+
+
+
+
+input {
+    font-size: 15px;
+    margin-bottom: 5px;
+    width: 300px;
+    height: 30px;
+    margin-right: 10px;
+
+
+}
+
+button {
+    width: 310px;
+    height: 40px;
+    background: hsl(154, 59%, 51%);
+    border: none;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    color: white;
+    font-size: 12px;
+}
+
+.firstbutton {
+    background: hsl(248, 32%, 49%);
+    width: 380px;
+
+}
+
+span.T {
+    color: hsl(0, 100%, 74%);
+}
+
+p {
+    color: black;
+    font-size: 12px;
+    font-weight: 400;
+
+}
+
+.firstp {
+    color: white;
+    font-size: 16px;
+}
+
+@media (min-width: 375px) and (max-width:1024px) {
+    main {
+        display: grid;
+        grid-template-areas:
+            'a'
+            'b'
+        ;
+        gap: 10px;
+
+        box-shadow: 0 10px 10px -5px;
+    }
+
+    .firstdiv {
+        grid-area: a;
+    }
+
+    .otherside {
+        grid-area: b;
+    }
+
+    body {
+        text-align: center;
+    }
+
+    .thirddiv {
+        width: 250px;
+    }
+
+    input {
+        width: 240px;
+        height: 25px;
+    }
+
+    .firstbutton {
+        width: 330px;
+    }
+
+    button {
+        width: 230px;
+    }
+
+
+}
